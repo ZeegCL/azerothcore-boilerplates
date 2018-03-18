@@ -48,27 +48,31 @@ public:
         return true;
     }
 
+    // Called when a player accepts a quest from the creature
     bool OnQuestAccept(Player* player, Creature* creature, Quest const* quest)
     {
         return true;
     }
 
+    // Called when a player selects a quest in the creature's quest menu
     bool OnQuestSelect(Player* player, Creature* creature, Quest const* quest)
     {
         return true;
     }
 
+    // Called when a player completes a quest with the creature
     bool OnQuestComplete(Player* player, Creature* creature, Quest const* quest)
     {
         return true;
     }
 
+    // Called when the player is rewarded for completing a quest
     bool OnQuestReward(Player* player, Creature* creature, Quest const* quest, uint32 opt)
     {
         return true;
     }
 
-    // TODO: Not pretty sure what it does, yet
+    // Called when the dialog status between a player and the creature is requested
     uint32 GetDialogStatus(Player* player, Creature* creature)
     {
         return true;
